@@ -26,5 +26,5 @@ steps:
 - task: PublishPipelineArtifact@1
   displayName: 'saving ~/.kube/config as artifact'
   inputs:
-    targetPath: '$(Build.ArtifactStagingDirectory)/home/vsts/.kube/config'
+    targetPath: '/home/vsts/.kube/config'
     artifactName: 'config'
